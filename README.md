@@ -60,6 +60,10 @@ Aunque el notebook incluye muchos más insights detallados, algunas conclusiones
 - La baja cantidad de datos en las valoraciones de 0 a 3.5-4 dificultó la predicción de malas valoraciones.
 - Se probaron técnicas como **oversampling**, que no resolvieron el problema de sesgo hacia puntuaciones medias.
 
+### Experimentación
+- Se probaron técnicas de combinación directa de modelos que eran mejores que las primeras pruebas pero seguían con el mismo problema.
+- En el notebook se incluyen productos intermedios en el que se puede ver el análisis que se hizo de los errores de forma detallada.
+  
 ### Modelo Final
 - Se optó por una combinación de varios modelos **XGBoost** por tramos de notas con:
   - **Validación cruzada**
@@ -69,6 +73,9 @@ Aunque el notebook incluye muchos más insights detallados, algunas conclusiones
 
 ### Resultados
 - El **RMSE final** obtenido fue de **0.5285**, lo que permite un error de medio punto al predecir una valoración de película.
+
+![Random Forest](https://github.com/antoniamayaobrador/netflix-imbd-eda/blob/main/randomforest.png)
+
 
 ---
 
